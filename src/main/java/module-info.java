@@ -5,10 +5,8 @@ module gaudin.scheduler {
     requires mysql.connector.j;
 
 
-    opens gaudin.scheduler to javafx.fxml;
-    exports gaudin.scheduler;
-    exports gaudin.scheduler.appmain;
     opens gaudin.scheduler.appmain to javafx.fxml;
+    exports gaudin.scheduler.appmain;
     exports gaudin.scheduler.DAO;
     opens gaudin.scheduler.DAO to javafx.fxml;
     exports gaudin.scheduler.model;
